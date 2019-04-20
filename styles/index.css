@@ -35,12 +35,49 @@
   background: #1D1D1D; }
   #header .header-content {
     width: 90%;
-    height: 50px;
     margin: 0 auto;
-    padding: 15px 0 5px;
+    padding: 15px 0;
     color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase; }
+    #header .header-content .service-info-wrapper {
+      width: 50%;
+      font-weight: bold; }
+      #header .header-content .service-info-wrapper .service-info .contact-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px; }
+        #header .header-content .service-info-wrapper .service-info .contact-info a {
+          padding: 3px 0; }
+      #header .header-content .service-info-wrapper .notifications {
+        text-align: center; }
+        #header .header-content .service-info-wrapper .notifications img {
+          padding: 3px 0; }
+        #header .header-content .service-info-wrapper .notifications .count-notifications {
+          margin: 2px auto 0;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: #B0140E; }
+    #header .header-content .menu {
+      width: 30%; }
+      #header .header-content .menu a {
+        color: #FFFFFF;
+        opacity: 0; }
+        #header .header-content .menu a:first-child {
+          animation: appearLink 1s linear forwards 0.6s; }
+        #header .header-content .menu a:nth-child(2) {
+          animation: appearLink 1s linear forwards 0.7s; }
+        #header .header-content .menu a:nth-child(3) {
+          animation: appearLink 1s linear forwards 0.8s; }
+        #header .header-content .menu a:nth-child(4) {
+          animation: appearLink 1s linear forwards 0.9s; }
+        #header .header-content .menu a:nth-child(5) {
+          animation: appearLink 1s linear forwards 1s; }
+
+@keyframes appearLink {
+  to {
+    opacity: 1; } }
 
 .d-flex {
   display: flex; }
