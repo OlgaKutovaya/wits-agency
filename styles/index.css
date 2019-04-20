@@ -52,6 +52,8 @@
       #header .header-content .service-info-wrapper .notifications {
         text-align: center; }
         #header .header-content .service-info-wrapper .notifications img {
+          width: 11px;
+          height: 14px;
           padding: 3px 0; }
         #header .header-content .service-info-wrapper .notifications .count-notifications {
           margin: 2px auto 0;
