@@ -78,6 +78,76 @@
 @keyframes appearLink {
   to {
     opacity: 1; } }
+    #header .header-content .dropdown {
+      position: relative;
+      margin-left: -125px; }
+      #header .header-content .dropdown .btnSignConsultation {
+        width: 60px;
+        height: 60px;
+        border: none;
+        background-color: #B0140E; }
+      #header .header-content .dropdown .dropdown-content {
+        position: absolute;
+        width: 60px;
+        height: 200px;
+        display: none;
+        background-color: #B0140E;
+        z-index: 1; }
+        #header .header-content .dropdown .dropdown-content p {
+          color: #FFFFFF;
+          transform: rotate(180deg);
+          font-size: 10px;
+          letter-spacing: 0.01rem;
+          writing-mode: tb-rl;
+          margin: 0 auto; }
+      #header .header-content .dropdown:hover .dropdown-content {
+        display: block; }
+
+@media only screen and (max-width: 1280px) {
+  #header .header-content {
+    width: 95%; }
+    #header .header-content .menu {
+      width: 35%; }
+    #header .header-content .dropdown {
+      margin-left: -35px; } }
+
+@media only screen and (max-width: 1024px) {
+  #header .header-content {
+    position: relative;
+    flex-direction: column; }
+    #header .header-content .service-info-wrapper {
+      width: 85%; }
+    #header .header-content .menu {
+      width: 50%;
+      margin-top: 20px; }
+    #header .header-content .dropdown {
+      position: absolute;
+      right: 25px;
+      top: 30px; } }
+
+@media only screen and (max-width: 768px) {
+  #header .header-content .menu {
+    width: 70%; } }
+
+@media only screen and (max-width: 375px) {
+  #header .header-content {
+    position: relative;
+    flex-direction: column; }
+    #header .header-content .service-info-wrapper {
+      flex-direction: column;
+      width: 85%; }
+      #header .header-content .service-info-wrapper .service-info .contact-info a {
+        font-size: 11px; }
+      #header .header-content .service-info-wrapper .notifications {
+        flex-direction: row;
+        width: 150px; }
+    #header .header-content .menu {
+      width: 100%;
+      font-size: 11px; }
+    #header .header-content .dropdown {
+      position: absolute;
+      right: 0;
+      top: 55px; } }
 
 .d-flex {
   display: flex; }

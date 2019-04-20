@@ -56,3 +56,78 @@
       @keyframes appearLink
         to
           opacity: 1
+    .dropdown
+      position: relative
+      margin-left: -125px
+      .btnSignConsultation
+        width: 60px
+        height: 60px
+        border: none
+        background-color: #B0140E
+      .dropdown-content
+        position: absolute
+        width: 60px
+        height: 200px
+        display: none
+        background-color: #B0140E
+        z-index: 1
+        p
+          color: #FFFFFF
+          transform: rotate(180deg)
+          font-size: 10px
+          letter-spacing: 0.01rem
+          writing-mode: tb-rl
+          margin: 0 auto
+
+      &:hover .dropdown-content
+        display: block
+
+@media only screen and (max-width: 1280px)
+  #header
+    .header-content
+      width: 95%
+      .menu
+        width: 35%
+      .dropdown
+        margin-left: -35px
+@media only screen and (max-width: 1024px)
+  #header
+    .header-content
+      position: relative
+      flex-direction: column
+      .service-info-wrapper
+        width: 85%
+      .menu
+        width: 50%
+        margin-top: 20px
+      .dropdown
+        position: absolute
+        right: 25px
+        top: 30px
+@media only screen and (max-width: 768px)
+  #header .header-content .menu
+    width: 70%
+@media only screen and (max-width: 375px)
+  #header
+    .header-content
+      position: relative
+      flex-direction: column
+      .service-info-wrapper
+        flex-direction: column
+        width: 85%
+        .service-info .contact-info a
+          font-size: 11px
+        .notifications
+          flex-direction: row
+          width: 150px
+      .menu
+        width: 100%
+        font-size: 11px
+      .dropdown
+        position: absolute
+        right: 0
+        top: 55px
+
+
+
+
