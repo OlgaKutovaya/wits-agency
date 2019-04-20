@@ -152,7 +152,7 @@
         margin-top: 10px;
         margin-left: -7px; }
         #header .header-content .service-info-wrapper .notifications img {
-          padding: 10px 0 0; }
+          padding-top: 10px; }
         #header .header-content .service-info-wrapper .notifications .count-notifications {
           width: 14px;
           height: 14px;
