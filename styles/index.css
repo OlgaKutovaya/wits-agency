@@ -135,19 +135,32 @@
     flex-direction: column; }
     #header .header-content .service-info-wrapper {
       flex-direction: column;
-      width: 85%; }
-      #header .header-content .service-info-wrapper .service-info .contact-info a {
-        font-size: 11px; }
+      width: 95%; }
+      #header .header-content .service-info-wrapper .service-info .contact-info {
+        margin: 0; }
+        #header .header-content .service-info-wrapper .service-info .contact-info a {
+          font-size: 11px; }
       #header .header-content .service-info-wrapper .notifications {
         flex-direction: row;
-        width: 150px; }
+        width: 150px;
+        margin-top: 10px;
+        margin-left: -7px; }
+        #header .header-content .service-info-wrapper .notifications img {
+          padding: 10px 0; }
+        #header .header-content .service-info-wrapper .notifications .count-notifications {
+          width: 13px;
+          height: 13px;
+          margin: 9px 0 0 5px; }
+          #header .header-content .service-info-wrapper .notifications .count-notifications p {
+            font-size: 10px; }
     #header .header-content .menu {
       width: 100%;
+      margin-top: 25px;
       font-size: 11px; }
     #header .header-content .dropdown {
       position: absolute;
       right: 0;
-      top: 55px; } }
+      top: 40px; } }
 
 .d-flex {
   display: flex; }
