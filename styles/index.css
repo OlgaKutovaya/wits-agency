@@ -44,17 +44,20 @@
       width: 50%;
       font-weight: bold; }
       #header .header-content .service-info-wrapper .service-info .contact-info {
+        width: 80%;
         display: flex;
         flex-direction: column;
         margin: 0 50px; }
         #header .header-content .service-info-wrapper .service-info .contact-info a {
           padding: 3px 0; }
       #header .header-content .service-info-wrapper .notifications {
-        text-align: center; }
+        text-align: center;
+        align-items: center; }
         #header .header-content .service-info-wrapper .notifications img {
           width: 11px;
           height: 14px;
-          padding: 3px 0; }
+          padding: 3px 0;
+          font-size: 2px; }
         #header .header-content .service-info-wrapper .notifications .count-notifications {
           margin: 2px auto 0;
           width: 16px;
@@ -139,6 +142,7 @@
       flex-direction: column;
       width: 95%; }
       #header .header-content .service-info-wrapper .service-info .contact-info {
+        width: 40%;
         margin: 0; }
         #header .header-content .service-info-wrapper .service-info .contact-info a {
           font-size: 11px; }
