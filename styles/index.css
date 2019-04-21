@@ -6,6 +6,7 @@
   background: #B0140E; }
   #intro svg {
     margin: auto;
+    -webkit-animation: scaleLogo 0.5s ease-in forwards 3.7s;
     animation: scaleLogo 0.5s ease-in forwards 3.7s; }
     #intro svg #path1 {
       stroke-dasharray: 2450;
