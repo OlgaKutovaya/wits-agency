@@ -31,8 +31,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1000;
-  background: #1D1D1D; }
+  z-index: 1000; }
   #header .header-content {
     width: 90%;
     margin: 0 auto;
