@@ -182,7 +182,7 @@
           height: 14px;
           margin: 9px 0 0 5px; }
           #header .header-content .service-info-wrapper .notifications .count-notifications p {
-            margin: 2px;
+            margin-top: -2px;
             font-size: 10px; }
     #header .header-content .menu {
       width: 100%;
