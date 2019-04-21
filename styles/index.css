@@ -132,11 +132,13 @@
       #header .header-content .dropdown:hover .dropdown-content {
         display: block; }
 
+@media only screen and (max-width: 1440px) {
+  #header .header-content .menu {
+    width: 35%; } }
+
 @media only screen and (max-width: 1280px) {
   #header .header-content {
     width: 95%; }
-    #header .header-content .menu {
-      width: 35%; }
     #header .header-content .dropdown {
       margin-left: -35px; } }
 
@@ -424,23 +426,80 @@
     margin: 0 auto;
     background: url("../img/abstract.svg") no-repeat -19px 0;
     background-size: contain; }
+    #informativePage .wrapper-informative-page .informative-main-wrapper {
+      width: 90%;
+      margin: 0 auto;
+      justify-content: flex-end; }
+      #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content {
+        width: 50%;
+        margin: 150px 0 100px 0; }
+        #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section:first-child {
+          margin-bottom: 100px; }
+        #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section {
+          color: #1D1D1D; }
+          #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h1, #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h2 {
+            width: 310px;
+            min-width: 310px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            font-weight: 700; }
+          #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section p {
+            font-size: 20px;
+            color: #5c5c5c;
+            line-height: 22px;
+            font-weight: normal;
+            font-family: IBM Plex Sans Light, 'sans-serif'; }
+
+@media only screen and (max-width: 1440px) {
+  #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content {
+    margin: 100px 0 100px 0; } }
 
 @media only screen and (max-width: 1280px) {
   #informativePage .wrapper-informative-page {
-    background-position: -125px 0; } }
+    background-position: -125px 0; }
+    #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content {
+      margin: 170px 0 100px 0; } }
 
 @media only screen and (max-width: 1024px) {
   #informativePage .wrapper-informative-page {
-    background-position: -55px 0; } }
+    background-position: -55px 0; }
+    #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content {
+      margin: 170px 0 40px 0; }
+      #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section:first-child {
+        margin-bottom: 45px; }
+      #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h1, #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h2 {
+        margin-bottom: 20px;
+        font-size: 35px; }
+      #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section p {
+        font-size: 17px;
+        line-height: 20px; } }
 
 @media only screen and (max-width: 768px) {
   #informativePage .wrapper-informative-page {
-    background-position: -165px 0; } }
+    background-position: -165px 0; }
+    #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content {
+      margin-top: 265px; } }
 
 @media only screen and (max-width: 375px) {
   #informativePage .wrapper-informative-page {
     background-position: -145px 2px;
-    background-size: cover; } }
+    background-size: cover; }
+    #informativePage .wrapper-informative-page .informative-main-wrapper {
+      width: 100%; }
+      #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content {
+        width: 100%;
+        margin: 200px 0 50px 0; }
+        #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section:first-child {
+          margin-bottom: 50px; }
+        #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section {
+          margin-left: 20px; }
+          #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h1, #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h2 {
+            font-size: 20px;
+            font-weight: 700; }
+          #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section p {
+            color: #1d1d1d;
+            font-size: 13px;
+            line-height: 15px; } }
 
 .d-flex {
   display: flex; }

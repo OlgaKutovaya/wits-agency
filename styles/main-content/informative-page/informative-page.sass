@@ -12,23 +12,84 @@
     background: url("../img/abstract.svg") no-repeat -19px 0
     background-size: contain
 
+    .informative-main-wrapper
+      width: 90%
+      margin: 0 auto
+      justify-content: flex-end
+      .informative-main-content
+        width: 50%
+        margin: 150px 0 100px 0
+        section:first-child
+          margin-bottom: 100px
+        section
+          color: #1D1D1D
+          h1, h2
+            width: 310px
+            min-width: 310px
+            margin-bottom: 30px
+            font-size: 40px
+            font-weight: 700
+          p
+            font-size: 20px
+            color: #5c5c5c
+            line-height: 22px
+            font-weight: normal
+            font-family: IBM Plex Sans Light, 'sans-serif'
+
+@media only screen and (max-width: 1440px)
+  #informativePage .wrapper-informative-page
+    .informative-main-wrapper .informative-main-content
+          margin: 100px 0 100px 0
+
 @media only screen and (max-width: 1280px)
   #informativePage
     .wrapper-informative-page
       background-position: -125px 0
+      .informative-main-wrapper .informative-main-content
+        margin: 170px 0 100px 0
 
 @media only screen and (max-width: 1024px)
   #informativePage
     .wrapper-informative-page
       background-position: -55px 0
+      .informative-main-wrapper
+        .informative-main-content
+          margin: 170px 0 40px 0
+          section:first-child
+            margin-bottom: 45px
+          section
+            h1, h2
+              margin-bottom: 20px
+              font-size: 35px
+            p
+              font-size: 17px
+              line-height: 20px
 
 @media only screen and (max-width: 768px)
   #informativePage
     .wrapper-informative-page
       background-position: -165px 0
+      .informative-main-wrapper .informative-main-content
+        margin-top: 265px
 
 @media only screen and (max-width: 375px)
   #informativePage
     .wrapper-informative-page
       background-position: -145px 2px
       background-size: cover
+      .informative-main-wrapper
+        width: 100%
+        .informative-main-content
+          width: 100%
+          margin: 200px 0 50px 0
+          section:first-child
+            margin-bottom: 50px
+          section
+            margin-left: 20px
+            h1, h2
+              font-size: 20px
+              font-weight: 700
+            p
+              color: #1d1d1d
+              font-size: 13px
+              line-height: 15px
