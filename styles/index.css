@@ -438,7 +438,7 @@
         #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section {
           color: #1D1D1D; }
           #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h1, #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h2 {
-            width: 310px;
+            width: 320px;
             min-width: 310px;
             margin-bottom: 30px;
             font-size: 40px;
@@ -492,7 +492,7 @@
         #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section:first-child {
           margin-bottom: 50px; }
         #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section {
-          margin-left: 20px; }
+          margin-left: 15px; }
           #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h1, #informativePage .wrapper-informative-page .informative-main-wrapper .informative-main-content section h2 {
             font-size: 20px;
             font-weight: 700; }
