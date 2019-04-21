@@ -120,6 +120,7 @@
         width: 60px;
         height: 200px;
         display: none;
+        background-color: #B0140E;
         z-index: 1; }
         #header .header-content .dropdown .dropdown-content p {
           color: #FFFFFF;
