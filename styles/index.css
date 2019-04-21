@@ -67,8 +67,8 @@
     #header .header-content .menu {
       width: 30%; }
       #header .header-content .menu a {
-        color: #FFFFFF;
-        opacity: 0; }
+        opacity: 0;
+        font-weight: 600; }
         #header .header-content .menu a:first-child {
           animation: appearLink 1s linear forwards 0.6s; }
         #header .header-content .menu a:nth-child(2) {
@@ -79,6 +79,9 @@
           animation: appearLink 1s linear forwards 0.9s; }
         #header .header-content .menu a:nth-child(5) {
           animation: appearLink 1s linear forwards 1s; }
+        #header .header-content .menu a:hover {
+          color: #B0140E;
+          transition: 0.1s; }
 
 @keyframes appearLink {
   to {

@@ -12,7 +12,10 @@ $(document).ready(function () {
       $notifications = $('.notifications'),
       $ringImg = $('#ring-img'),
       $counterNotification = $('.count-notifications'),
-      $dropDown = $('.dropdown');
+      $dropDown = $('.dropdown'),
+      $navLink = $('.menu a');
+
+
 
    // Fill svg image
    setTimeout(function () {
@@ -53,7 +56,9 @@ $(document).ready(function () {
          $notifications.addClass('color-cod-gray');
          $ringImg.attr('src', 'img/black-ring.svg');
          $counterNotification.addClass('d-none');
-         $dropDown.addClass('d-block').removeClass('d-none')
+         $dropDown.addClass('d-block').removeClass('d-none');
+         $navLink.addClass('color-cod-gray').removeClass('color-white');
+
       } else {
          $header.addClass('bg-cod-gray').removeClass('bg-transparent');
          $logo.attr('src', 'img/logo.svg');
@@ -61,7 +66,8 @@ $(document).ready(function () {
          $notifications.removeClass('color-cod-gray');
          $ringImg.attr('src', 'img/ring.svg');
          $counterNotification.removeClass('d-none');
-         $dropDown.addClass('d-none').removeClass('d-block')
+         $dropDown.addClass('d-none').removeClass('d-block');
+         $navLink.addClass('color-white').removeClass('color-cod-gray');
       }
    });
 
