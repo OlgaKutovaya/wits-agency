@@ -25,10 +25,18 @@
           a
             padding: 3px 0
             color: $tabasco
+            &:hover
+              color: $alizarinCrimson
+              transition: 0.1s
 
       .notifications
         text-align: center
         align-items: center
+        &:hover
+          cursor: pointer
+          p.notifications
+            color: $alizarinCrimson
+            transition: 0.1s
         img
           width: 11px
           height: 14px
@@ -40,11 +48,24 @@
           height: 16px
           border-radius: 50%
           background: $tabasco
+          p
+            font-size: 10px
+            padding-top: 3px
     .menu
       width: 30%
       a
         opacity: 0
-        font-weight: 600
+        font-weight: 700
+        &:nth-child(2)::after
+          content: ''
+          display: inline-block
+          vertical-align: middle
+          margin: 0 0 3px 5px
+          width: 0
+          height: 0
+          border-left: 5px solid transparent
+          border-right: 5px solid transparent
+          border-top: 9px solid $tabasco
         &:first-child
           animation: appearLink 1s linear forwards 0.6s
         &:nth-child(2)
@@ -56,7 +77,7 @@
         &:nth-child(5)
           animation: appearLink 1s linear forwards 1s
         &:hover
-          color: $tabasco
+          color: $alizarinCrimson
           transition: 0.1s
       @keyframes appearLink
         to

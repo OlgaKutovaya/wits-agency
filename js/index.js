@@ -16,7 +16,6 @@ $(document).ready(function () {
       $navLink = $('.menu a');
 
 
-
    // Fill svg image
    setTimeout(function () {
       $svgPath.addClass('fill-path');
@@ -70,5 +69,4 @@ $(document).ready(function () {
          $navLink.addClass('color-white').removeClass('color-cod-gray');
       }
    });
-
 });
