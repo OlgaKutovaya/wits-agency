@@ -1,0 +1,65 @@
+@import "../../helpers/colors"
+
+.general-contacts
+  flex-direction: column
+  min-width: 260px
+  min-height: 130px
+  top: 700px
+  right: 130px
+  .info-mail
+    opacity: 0
+    text-align: right
+    animation: appearInfoMail 0.5s linear forwards 0.9s
+    p
+      color: $dustyGray
+      font-size: 12px
+      margin-bottom: 10px
+    a
+      color: $white
+  @keyframes appearInfoMail
+    to
+      opacity: 1
+
+  .btn-sign-consultation
+    opacity: 0
+    width: 260px
+    min-width: 260px
+    min-height: 60px
+    margin-top: 80px
+    padding: 20px
+    color: $white
+    font-size: 10px
+    text-transform: uppercase
+    background: $tabasco
+    border: none
+    outline: none
+    animation: appearButton 0.7s linear forwards 1.2s
+    &:hover
+      background-image: linear-gradient(to right, $mahogany, $totemPole,  $tabasco)
+      cursor: pointer
+
+  @keyframes appearButton
+    to
+      opacity: 1
+      margin-top: 40px
+
+@media only screen and (max-width: 1440px)
+  .general-contacts
+    top: 530px
+
+@media only screen and (max-width: 1280px)
+  .general-contacts
+    top: 600px
+    right: 60px
+
+@media only screen and (max-width: 1024px)
+  .general-contacts
+    top: 540px
+
+@media only screen and (max-width: 375px)
+  .general-contacts
+    top: 440px
+    right: 10px
+    .btn-sign-consultation
+      min-height: 45px
+      padding: 10px

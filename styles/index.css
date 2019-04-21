@@ -31,7 +31,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
   background: #1D1D1D; }
   #header .header-content {
     width: 90%;
@@ -49,7 +49,8 @@
         flex-direction: column;
         margin: 0 50px; }
         #header .header-content .service-info-wrapper .service-info .contact-info a {
-          padding: 3px 0; }
+          padding: 3px 0;
+          color: #B0140E; }
       #header .header-content .service-info-wrapper .notifications {
         text-align: center;
         align-items: center; }
@@ -169,6 +170,98 @@
       right: 0;
       top: 40px; } }
 
+.general-contacts {
+  flex-direction: column;
+  min-width: 260px;
+  min-height: 130px;
+  top: 700px;
+  right: 130px; }
+  .general-contacts .info-mail {
+    opacity: 0;
+    text-align: right;
+    animation: appearInfoMail 0.5s linear forwards 0.9s; }
+    .general-contacts .info-mail p {
+      color: #9c9c9c;
+      font-size: 12px;
+      margin-bottom: 10px; }
+    .general-contacts .info-mail a {
+      color: #FFFFFF; }
+
+@keyframes appearInfoMail {
+  to {
+    opacity: 1; } }
+  .general-contacts .btn-sign-consultation {
+    opacity: 0;
+    width: 260px;
+    min-width: 260px;
+    min-height: 60px;
+    margin-top: 80px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #B0140E;
+    border: none;
+    outline: none;
+    animation: appearButton 0.7s linear forwards 1.2s; }
+    .general-contacts .btn-sign-consultation:hover {
+      background-image: linear-gradient(to right, #590a08, #90100b, #B0140E);
+      cursor: pointer; }
+
+@keyframes appearButton {
+  to {
+    opacity: 1;
+    margin-top: 40px; } }
+
+@media only screen and (max-width: 1440px) {
+  .general-contacts {
+    top: 530px; } }
+
+@media only screen and (max-width: 1280px) {
+  .general-contacts {
+    top: 600px;
+    right: 60px; } }
+
+@media only screen and (max-width: 1024px) {
+  .general-contacts {
+    top: 540px; } }
+
+@media only screen and (max-width: 375px) {
+  .general-contacts {
+    top: 440px;
+    right: 10px; }
+    .general-contacts .btn-sign-consultation {
+      min-height: 45px;
+      padding: 10px; } }
+
+.general-footer {
+  width: 90%;
+  margin: 5px auto 0;
+  height: 50px; }
+  .general-footer p {
+    padding-top: 7px;
+    font-size: 18px;
+    color: #FFFFFF; }
+  .general-footer a {
+    width: 70px;
+    height: 70px; }
+    .general-footer a:hover {
+      cursor: pointer; }
+
+@media only screen and (max-width: 1024px) {
+  .general-footer {
+    margin: -50px auto 0; } }
+
+@media only screen and (max-width: 375px) {
+  .general-footer {
+    position: absolute;
+    bottom: 145px;
+    left: 25px;
+    z-index: 1; }
+    .general-footer p {
+      padding: 10px 5px 0 0;
+      font-size: 10px; } }
+
 .general-page {
   width: 100%;
   height: 100vh;
@@ -177,13 +270,13 @@
   .general-page .introduction-info {
     width: 100%;
     margin: 0 auto; }
-    .general-page .introduction-info div {
+    .general-page .introduction-info .words-wrapper {
       width: 90%;
       height: 775px;
       margin: 0 auto;
       padding-top: 100px;
       overflow: hidden; }
-      .general-page .introduction-info div .Words {
+      .general-page .introduction-info .words-wrapper .Words {
         height: 100%;
         margin: 0 auto;
         padding: 0 10px;
@@ -191,27 +284,27 @@
         font-weight: 600;
         letter-spacing: -3px;
         text-transform: uppercase;
-        transform: translate3d(0, -190px, 0);
+        transform: translate3d(0, -200px, 0);
         -webkit-font-smoothing: antialiased;
         -webkit-font-kerning: normal;
         -webkit-text-size-adjust: 100%; }
-        .general-page .introduction-info div .Words .Words-line {
+        .general-page .introduction-info .words-wrapper .Words .Words-line {
           height: 105px;
           overflow: hidden;
           position: relative; }
-          .general-page .introduction-info div .Words .Words-line:nth-child(odd) {
+          .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(odd) {
             transform: skew(60deg, -30deg) scaleY(0.7); }
-          .general-page .introduction-info div .Words .Words-line:nth-child(even) {
+          .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(even) {
             transform: skew(0deg, -30deg) scaleY(1.3); }
-          .general-page .introduction-info div .Words .Words-line:nth-child(1) {
+          .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(1) {
             left: 30px; }
-          .general-page .introduction-info div .Words .Words-line:nth-child(2) {
+          .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(2) {
             left: 85px; }
-          .general-page .introduction-info div .Words .Words-line:nth-child(3) {
+          .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(3) {
             left: 160px; }
-          .general-page .introduction-info div .Words .Words-line:nth-child(4) {
+          .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(4) {
             left: 210px; }
-          .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+          .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(5) {
             left: 300px; }
   .general-page .Words-line p {
     height: 105px;
@@ -226,75 +319,75 @@
     transform: translate3d(0, -105px, 0); }
 
 @media only screen and (max-width: 1440px) {
-  .general-page .introduction-info div {
+  .general-page .introduction-info .words-wrapper {
     height: 600px; }
-    .general-page .introduction-info div .Words {
+    .general-page .introduction-info .words-wrapper .Words {
       font-size: 95px;
       transform: translate3d(0, -135px, 0); }
-      .general-page .introduction-info div .Words:hover p {
+      .general-page .introduction-info .words-wrapper .Words:hover p {
         transform: translate3d(0, -100px, 0); }
-      .general-page .introduction-info div .Words .Words-line {
+      .general-page .introduction-info .words-wrapper .Words .Words-line {
         height: 82px; }
-        .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+        .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(5) {
           left: 280px; }
-        .general-page .introduction-info div .Words .Words-line p {
+        .general-page .introduction-info .words-wrapper .Words .Words-line p {
           line-height: 65px; } }
 
 @media only screen and (max-width: 1280px) {
-  .general-page .introduction-info div {
+  .general-page .introduction-info .words-wrapper {
     height: 670px; }
-    .general-page .introduction-info div .Words {
+    .general-page .introduction-info .words-wrapper .Words {
       transform: translate3d(0, -45px, 0); } }
 
 @media only screen and (max-width: 1024px) {
-  .general-page .introduction-info div .Words {
+  .general-page .introduction-info .words-wrapper .Words {
     font-size: 85px; }
-    .general-page .introduction-info div .Words .Words-line {
+    .general-page .introduction-info .words-wrapper .Words .Words-line {
       height: 82px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(1) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(1) {
         left: 17px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(2) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(2) {
         left: 50px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(3) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(3) {
         left: 90px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(4) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(4) {
         left: 116px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(5) {
         left: 160px; }
-      .general-page .introduction-info div .Words .Words-line p {
+      .general-page .introduction-info .words-wrapper .Words .Words-line p {
         line-height: 65px; } }
 
 @media only screen and (max-width: 768px) {
-  .general-page .introduction-info div {
+  .general-page .introduction-info .words-wrapper {
     width: 100%; }
-    .general-page .introduction-info div .Words {
+    .general-page .introduction-info .words-wrapper .Words {
       font-size: 59px; }
-      .general-page .introduction-info div .Words .Words-line {
+      .general-page .introduction-info .words-wrapper .Words .Words-line {
         height: 65px; }
-        .general-page .introduction-info div .Words .Words-line p {
+        .general-page .introduction-info .words-wrapper .Words .Words-line p {
           line-height: 40px; }
-        .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+        .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(5) {
           left: 149px; }
-        .general-page .introduction-info div .Words .Words-line p {
+        .general-page .introduction-info .words-wrapper .Words .Words-line p {
           line-height: 65px; } }
 
 @media only screen and (max-width: 375px) {
-  .general-page .introduction-info div .Words {
+  .general-page .introduction-info .words-wrapper .Words {
     font-size: 30px;
     transform: translate3d(0, 10px, 0); }
-    .general-page .introduction-info div .Words .Words-line {
+    .general-page .introduction-info .words-wrapper .Words .Words-line {
       height: 50px; }
-      .general-page .introduction-info div .Words .Words-line p {
+      .general-page .introduction-info .words-wrapper .Words .Words-line p {
         line-height: 24px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(1) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(1) {
         left: 10px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(2) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(2) {
         left: 14px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(3) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(3) {
         left: 40px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(4) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(4) {
         left: 55px; }
-      .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+      .general-page .introduction-info .words-wrapper .Words .Words-line:nth-child(5) {
         left: 95px; } }
 
 #informativePage {

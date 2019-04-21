@@ -11,11 +11,11 @@ $line-height: 89px
   width: 100%
   height: 100vh
   margin: 0 auto
-  background: #1D1D1D
+  background: $codGray
   .introduction-info
     width: 100%
     margin: 0 auto
-    div
+    .words-wrapper
       width: 90%
       height: 775px
       margin: 0 auto
@@ -29,7 +29,7 @@ $line-height: 89px
         font-weight: 600
         letter-spacing: -3px
         text-transform: uppercase
-        transform: translate3d(0, -190px, 0)
+        transform: translate3d(0, -200px, 0)
         -webkit-font-smoothing: antialiased
         -webkit-font-kerning: normal
         -webkit-text-size-adjust: 100%
@@ -71,7 +71,7 @@ $line-height: 89px
 @media only screen and (max-width: 1440px)
   .general-page
     .introduction-info
-      div
+      .words-wrapper
         height: 600px
         .Words
           font-size: 95px
@@ -89,7 +89,7 @@ $line-height: 89px
 @media only screen and (max-width: 1280px)
   .general-page
     .introduction-info
-      div
+      .words-wrapper
         height: 670px
         .Words
           transform: translate3d(0, -45px, 0)
@@ -97,7 +97,7 @@ $line-height: 89px
 @media only screen and (max-width: 1024px)
   .general-page
     .introduction-info
-      div
+      .words-wrapper
         .Words
           font-size: 85px
           .Words-line
@@ -118,7 +118,7 @@ $line-height: 89px
 @media only screen and (max-width: 768px)
   .general-page
     .introduction-info
-      div
+      .words-wrapper
         width: 100%
         .Words
           font-size: 59px
@@ -134,7 +134,7 @@ $line-height: 89px
 @media only screen and (max-width: 375px)
   .general-page
     .introduction-info
-      div
+      .words-wrapper
         .Words
           font-size: 30px
           transform: translate3d(0, 10px, 0)
@@ -152,7 +152,3 @@ $line-height: 89px
               left: 55px
             &:nth-child(5)
               left: 95px
-
-
-
-
