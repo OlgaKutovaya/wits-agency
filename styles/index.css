@@ -414,11 +414,33 @@
         left: 95px; } }
 
 #informativePage {
-  position: relative;
   background: #EDEDED;
   width: 100%;
   height: 100vh;
   margin: 0 auto; }
+  #informativePage .wrapper-informative-page {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../img/abstract.svg") no-repeat -19px 0;
+    background-size: contain; }
+
+@media only screen and (max-width: 1280px) {
+  #informativePage .wrapper-informative-page {
+    background-position: -125px 0; } }
+
+@media only screen and (max-width: 1024px) {
+  #informativePage .wrapper-informative-page {
+    background-position: -55px 0; } }
+
+@media only screen and (max-width: 768px) {
+  #informativePage .wrapper-informative-page {
+    background-position: -165px 0; } }
+
+@media only screen and (max-width: 375px) {
+  #informativePage .wrapper-informative-page {
+    background-position: -145px 2px;
+    background-size: cover; } }
 
 .d-flex {
   display: flex; }
