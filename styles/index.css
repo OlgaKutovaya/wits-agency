@@ -169,6 +169,141 @@
       right: 0;
       top: 40px; } }
 
+.general-page {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: #1D1D1D; }
+  .general-page .introduction-info {
+    width: 100%;
+    margin: 0 auto; }
+    .general-page .introduction-info div {
+      width: 90%;
+      height: 775px;
+      margin: 0 auto;
+      padding-top: 100px;
+      overflow: hidden; }
+      .general-page .introduction-info div .Words {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        font-size: 115px;
+        font-weight: 600;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+        transform: translate3d(0, -190px, 0);
+        -webkit-font-smoothing: antialiased;
+        -webkit-font-kerning: normal;
+        -webkit-text-size-adjust: 100%; }
+        .general-page .introduction-info div .Words .Words-line {
+          height: 105px;
+          overflow: hidden;
+          position: relative; }
+          .general-page .introduction-info div .Words .Words-line:nth-child(odd) {
+            transform: skew(60deg, -30deg) scaleY(0.7); }
+          .general-page .introduction-info div .Words .Words-line:nth-child(even) {
+            transform: skew(0deg, -30deg) scaleY(1.3); }
+          .general-page .introduction-info div .Words .Words-line:nth-child(1) {
+            left: 30px; }
+          .general-page .introduction-info div .Words .Words-line:nth-child(2) {
+            left: 85px; }
+          .general-page .introduction-info div .Words .Words-line:nth-child(3) {
+            left: 160px; }
+          .general-page .introduction-info div .Words .Words-line:nth-child(4) {
+            left: 210px; }
+          .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+            left: 300px; }
+  .general-page .Words-line p {
+    height: 105px;
+    line-height: 90px;
+    padding: 0 10px;
+    color: #FFFFFF;
+    transition: all .4s ease-in-out;
+    transform: translate3d(0, 0, 0);
+    vertical-align: top;
+    white-space: nowrap; }
+  .general-page .Words:hover p {
+    transform: translate3d(0, -105px, 0); }
+
+@media only screen and (max-width: 1440px) {
+  .general-page .introduction-info div {
+    height: 600px; }
+    .general-page .introduction-info div .Words {
+      font-size: 95px;
+      transform: translate3d(0, -135px, 0); }
+      .general-page .introduction-info div .Words:hover p {
+        transform: translate3d(0, -100px, 0); }
+      .general-page .introduction-info div .Words .Words-line {
+        height: 82px; }
+        .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+          left: 280px; }
+        .general-page .introduction-info div .Words .Words-line p {
+          line-height: 65px; } }
+
+@media only screen and (max-width: 1280px) {
+  .general-page .introduction-info div {
+    height: 670px; }
+    .general-page .introduction-info div .Words {
+      transform: translate3d(0, -45px, 0); } }
+
+@media only screen and (max-width: 1024px) {
+  .general-page .introduction-info div .Words {
+    font-size: 85px; }
+    .general-page .introduction-info div .Words .Words-line {
+      height: 82px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(1) {
+        left: 17px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(2) {
+        left: 50px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(3) {
+        left: 90px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(4) {
+        left: 116px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+        left: 160px; }
+      .general-page .introduction-info div .Words .Words-line p {
+        line-height: 65px; } }
+
+@media only screen and (max-width: 768px) {
+  .general-page .introduction-info div {
+    width: 100%; }
+    .general-page .introduction-info div .Words {
+      font-size: 59px; }
+      .general-page .introduction-info div .Words .Words-line {
+        height: 65px; }
+        .general-page .introduction-info div .Words .Words-line p {
+          line-height: 40px; }
+        .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+          left: 149px; }
+        .general-page .introduction-info div .Words .Words-line p {
+          line-height: 65px; } }
+
+@media only screen and (max-width: 375px) {
+  .general-page .introduction-info div .Words {
+    font-size: 30px;
+    transform: translate3d(0, 10px, 0); }
+    .general-page .introduction-info div .Words .Words-line {
+      height: 50px; }
+      .general-page .introduction-info div .Words .Words-line p {
+        line-height: 24px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(1) {
+        left: 10px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(2) {
+        left: 14px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(3) {
+        left: 40px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(4) {
+        left: 55px; }
+      .general-page .introduction-info div .Words .Words-line:nth-child(5) {
+        left: 95px; } }
+
+#informativePage {
+  position: relative;
+  background: #EDEDED;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto; }
+
 .d-flex {
   display: flex; }
 
